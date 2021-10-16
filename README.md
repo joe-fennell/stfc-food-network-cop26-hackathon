@@ -31,24 +31,85 @@ First up, please read the [code of conduct](CODE_OF_CONDUCT.md). By participatin
 
 Secondly, please make a note of the times of the two mandatory sessions: 10:00 - 11:00 GMT on Tuesday 2nd November and 14:15 - 16:15 GMT on Friday 5th November.
 
-| | | |
+| **Tuesday 2nd November**| | |
 |:--- |:--- |:--- |
-**Tuesday 2nd November**
 10:00-10:30 GMT | Welcome and Introduction | Professor Sonal Choudhury
 10:30-11:00 GMT | Q&A: Technical/Practical Advice | Dr Joe Fennell
 **Friday 5th November**
 14:00 GMT | Deadline for slide submission | send to helpdesk@joefennell.org
-14:15-15:30 GMT | Team presentations |
+14:15-15:30 GMT | Team pitch |
 15:30-16:00 GMT | Judging (offline) |
 16:00 - 16:15 GMT| Award
 
+## 4. Your pitch
+Your team needs to produce a 10 minute pitch that showcases your idea. The format is up to you, but remember this is a pitch for funding, so you need to present a coherent argument for why your app should be funded.
 
+It could include :
+- [**User Stories**](https://www.atlassian.com/agile/project-management/user-stories) Descriptions of why and how your users will interact with the platform
+- **Results**  from the data experiments you carry out during the hackathon
+- **How the app will work** This could include a description of analysis strategies
+- **Visualisations** This could be example interfaces shown as mock-ups, wireframes or prototype demonstrations
+- **Management** How your team will use the investment to produce the platform. How will you keep it running?
 
+You must submit your slides by 14:00 GMT on Friday 5th of November (email slides or a link to helpdesk@joefennell.org). Slides
+submitted later than this will not be accepted, but you will still be able to
+pitch (without slides).
 
+Alternatively, you are welcome to submit a video presentation of no more than 10
+minutes by the slide deadline. This should be hosted on Youtube or Vimeo and cannot be edited after the deadline. Please email the link as above.
 
+## 5. Recommended Datasets
+We have included data gathered by project partners as well as relevant 3rd party geospatial data providers.
 
+### 5.1. Farm survey data
+This is a 4 year farm survey with the yield and crop type along with incomplete spatial information. The dataset is included in this repository: [data/2016_to_2020_ICS_data_v3_-_MP.xlsx](data/2016_to_2020_ICS_data_v3_-_MP.xlsx)
 
-## Other Information Sources
+| Field | Description | dtype |
+| --- | --- | --- |
+Year | Year of survey | int
+Farmer Tracenet code | unique farmer code | str
+Village | Village of farm | str
+District | District of farm | str
+State | State of farm | str
+Latitude | Latitude of farm. Although may not be exact | float
+Longitude | Longitude of farm (May not be exact) | float
+Crops | Crop type | str
+Area (HA) | Area of that crop type | float
+Estimated yield | Weight of crop in metric tonnes | float
+
+### 5.2. Market data from Indian Government
+The [data.gov.in](https://data.gov.in) website has over 300,000 datasets. Part of this hackathon is about exploring the breadth and quality of these data. The most relevant section is probably the [agricultural markets section](https://data.gov.in/sector/agricultural-marketing).
+
+An example dataset is the Daily Market Prices of Garlic across India. The holding
+page is here:
+[https://data.gov.in/resources/variety-wise-daily-market-prices-garlic-2021/api](https://data.gov.in/resources/variety-wise-daily-market-prices-garlic-2021/api) displaying the resource ID.
+
+You can then make an API request over https to download a CSV. e.g.
+
+https://api.data.gov.in/resource/af4ed290-ed4f-40e1-a8b8-a4440e57a9ed?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=csv&offset=0
+
+> Note that the `api-key` has been set to a test key that limits the number of
+records to 10. You can replace this with the key in your user space (see section 2.2).
+
+There is a pip-installable package called `datagovindia` that offers a Python interface
+to the data service: [visit project pages](https://pypi.org/project/datagovindia/).
+We have not tested this. Another option would be using the [Requests](https://pypi.org/project/requests/) library in Python to help you parse requests to the web service.
+
+### 5.3. Soil Data
+Your project may require soils data. One source is [Soil Grids](https://data.isric.org/geonetwork/srv/eng/catalog.search#/home) who provide a [Web Mapping Service](https://maps.isric.org/) for various soil parameters. This is gridded at different spatial resolutions, but typically 250m.
+
+You can access this in many different ways. One option would be the [OWSLib](https://geopython.github.io/OWSLib/introduction.html) Python interface.
+
+### 5.4. Google Earth Engine
+Earth Engine is a tool giving access to many freely-available Remote Sensing datasets and allowing on-the-fly processing for various analyses. It can be accessed via the Code Editor GUI
+<img src="handbook/img/ee.png" alt="alt text"/>
+**Google Earth Engine Code Editor**
+
+Alternatively it can be accessed via the Python API. An introduction to this can be found here [here](https://developers.google.com/earth-engine/guides/python_install-colab)
+
+### 5.5. Fertiliser and Pesticides Data
+
+### 5.6 Other Information Sources
 
 | URL | Type |
 |:--- | :--- |
@@ -61,4 +122,4 @@ https://weatherstack.com/product | weather data
 http://apidev.accuweather.com/developers/ | weather data
 http://nwp.imd.gov.in/dist_fcst.htm | weather forecast data
 https://krishi.icar.gov.in/ObservationData/ | Agricultural study/monitoring data
-https://opendatakit.org/ | Open Data Kit
+https://moqups.com/ | Wireframe and prototyping tools
