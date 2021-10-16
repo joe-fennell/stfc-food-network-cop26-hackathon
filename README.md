@@ -7,6 +7,7 @@
 <th><img src="handbook/img/stfc_logo.png" alt="alt text" height="50"/></th>
 </tr>
 </table>
+
 ## Event Handbook
 This handbook contains all the necessary information for participants of the event. If you have any queries about the materials provided or find a problem, please email [helpdesk@joefennell.org](mailto:helpdesk@joefennell.org)
 
