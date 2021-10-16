@@ -1,1 +1,3 @@
-# stfc-food-network-cop26-hackathon
+# Welcome to the COP-26 Hackathon
+## The Challenge
+Through our partnerships with UKRI STFC, STFC Hartree Centre, IBM Research, and the [Centre for Sustainable Agriculture](https://csa-india.org/) we have identified a need to provide smallholder farmers with timely and location-specific advice about the crop types and varieties they should grow. Our challenge for the hackathon is to bring together hugely varied datasets - from market price data to soil maps - to design an integrated OPEN ACCESS platform for recommending crop type, planting date and management advice for smallholder farmers in India.
