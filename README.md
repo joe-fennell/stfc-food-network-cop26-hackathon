@@ -115,15 +115,15 @@ Alternatively it can be accessed via the Python API. An introduction to this can
 
 ### 5.6 Other Information Sources
 
-| URL | Type |
+| Link | Type |
 |:--- | :--- |
-https://seednet.gov.in | Crop groups and crops based on seednet
-https://www.cropnutrition.com/efu-soil-ph | Soil pH information
-https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/nrcs142p2_053260.pdf | Soil bulk density Information
-http://www.fao.org/tempref/FI/CDrom/FAO_Training/FAO_Training/General/x6706e/x6706e06.htm | Soil Classifications
-https://agromonitoring.com/api | Alternative service for remotely-sensed imagery and weather data (polygon API)
-https://weatherstack.com/product | weather data
-http://apidev.accuweather.com/developers/ | weather data
-http://nwp.imd.gov.in/dist_fcst.htm | weather forecast data
-https://krishi.icar.gov.in/ObservationData/ | Agricultural study/monitoring data
-https://moqups.com/ | Wireframe and prototyping tools
+[Seednet](https://seednet.gov.in) | Crop groups and crops based on seednet
+[Crop Nutrition](https://www.cropnutrition.com/efu-soil-ph) | Soil pH information
+[Natural Resource Conservation Service](https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/nrcs142p2_053260.pdf) | Soil bulk density Information
+[FAO](http://www.fao.org/tempref/FI/CDrom/FAO_Training/FAO_Training/General/x6706e/x6706e06.htm) | Soil Classifications
+[AgroMonitoring](https://agromonitoring.com/api) | Alternative service for remotely-sensed imagery and weather data (polygon API)
+[Weather Stack](https://weatherstack.com/product) | weather data
+[AccuWeather](http://apidev.accuweather.com/developers/) | weather data
+[Indian Weather Service](http://nwp.imd.gov.in/dist_fcst.htm) | weather forecast data
+[Krishi](https://krishi.icar.gov.in/ObservationData/) | Agricultural study/monitoring data
+[Moqups](https://moqups.com/) | Wireframe and prototyping tools
