@@ -1,9 +1,12 @@
 # STFC FN+ COP26 Hackathon
-<img src="handbook/img/fn_logo.png" alt="alt text" height="50"/>
-<img src="handbook/img/csa_orig.png" alt="alt text" height="50"/>
-<img src="handbook/img/ibm_res.jpeg" alt="alt text" height="50"/>
-<img src="handbook/img/stfc_logo.png" alt="alt text" height="50"/>
-
+<table>
+<tr>
+<th><img src="handbook/img/fn_logo.png" alt="alt text" height="50"/></th>
+<th><img src="handbook/img/csa_orig.png" alt="alt text" height="50"/></th>
+<th><img src="handbook/img/ibm_res.jpeg" alt="alt text" height="50"/></th>
+<th><img src="handbook/img/stfc_logo.png" alt="alt text" height="50"/></th>
+</tr>
+</table>
 ## Event Handbook
 This handbook contains all the necessary information for participants of the event. If you have any queries about the materials provided or find a problem, please email [helpdesk@joefennell.org](mailto:helpdesk@joefennell.org)
 
