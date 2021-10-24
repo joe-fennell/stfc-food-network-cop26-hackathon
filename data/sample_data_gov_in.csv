@@ -1,0 +1,11 @@
+state,district,market,commodity,variety,arrival_date,min_price,max_price,modal_price
+Chattisgarh,Balrampur,Ramanujganj,Garlic,Desi,2021-04-30T07:48:16Z,10000,10000,10000
+Chattisgarh,Balrampur,Ramanujganj,Garlic,Other,2021-01-01T07:48:16Z,4000,4000,4000
+Chattisgarh,Balrampur,Ramanujganj,Garlic,Other,2021-02-01T07:48:16Z,4000,4000,4000
+Chattisgarh,Balrampur,Ramanujganj,Garlic,Other,2021-03-05T07:48:16Z,4000,4000,4000
+Chattisgarh,Balrampur,Ramanujganj,Garlic,Other,2021-04-05T07:48:16Z,4000,4000,4000
+Chattisgarh,Balrampur,Ramanujganj,Garlic,Other,2021-06-29T07:48:16Z,4000,4000,4000
+Chattisgarh,Balrampur,Ramanujganj,Garlic,Other,2021-06-30T07:48:16Z,5000,5000,5000
+Chattisgarh,Balrampur,Ramanujganj,Garlic,Other,2021-07-29T07:48:16Z,5000,5000,5000
+Chattisgarh,Durg,Durg,Garlic,Average,2021-01-01T07:48:16Z,10000,12000,11000
+Chattisgarh,Durg,Durg,Garlic,Average,2021-01-02T07:48:16Z,13000,15000,14000

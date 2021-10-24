@@ -9,7 +9,7 @@
 </table>
 
 ## Event Handbook
-This handbook contains all the necessary information for participants of the event. If you have any queries about the materials provided or find a problem, please email [helpdesk@joefennell.org](mailto:helpdesk@joefennell.org)
+This handbook contains all the necessary information for participants of the event. If you have any queries about the materials provided or find a problem, please email [stfcfoodnetwork@sheffield.ac.uk](mailto:stfcfoodnetwork@sheffield.ac.uk)
 
 ## 1. The Challenge
 Through our partnerships with UKRI STFC, STFC Hartree Centre, IBM Research, and the [Centre for Sustainable Agriculture](https://csa-india.org/) we have identified a need to provide smallholder farmers with timely and location-specific advice about the crop types and varieties they should grow. Our challenge for the hackathon is to bring together hugely varied datasets - from market price data to soil maps - to design an integrated **open access** platform for recommending crop type, planting date and management advice for smallholder farmers in India.
@@ -19,19 +19,18 @@ Through our partnerships with UKRI STFC, STFC Hartree Centre, IBM Research, and 
 
 This data service is part of the Indian Open Government Data initiative and provides a large number of datasets across multiple sectors. It is important to register for an account as you will need an API Key to access the database.
 
-[**Click Here To Register**](https://auth.mygov.in/user/register?destination=oauth2/register/datagovindia)
+[Click Here To Register](https://auth.mygov.in/user/register?destination=oauth2/register/datagovindia)
 
 ### 2.2. Check you can access your API key
 <img src="handbook/img/data.gov.in.png" alt="alt text" height="150"/>
 
-### 2.3. Get a Google Account and register for Google Earth Engine
-Google Earth Engine allows you to access and process different geospatial datasets.
-In particular there is now access to Sentinel 2-Level 2A multispectral imagery
+### 2.3. Get a Google Account and register for Google Earth Engine [optional]
+Google Earth Engine allows you to access and process different geospatial datasets. The service is free with a limit on the amount of processing you can request.
 
-[**Click Here To Register**](https://earthengine.google.com/)
+[Click Here To Register](https://earthengine.google.com/)
 
 ## 3. Participation and Agenda
-First up, please read the [code of conduct](CODE_OF_CONDUCT.md). By participating in this event, you agree to adhere to the terms of this agreement.
+Firstly, please read the [code of conduct](CODE_OF_CONDUCT.md) and the terms and conditions of entry. By participating in this event, you agree to adhere to the behaviour code and the terms and conditions.
 
 Secondly, please make a note of the times of the two mandatory sessions: 10:00 - 11:00 GMT on Tuesday 2nd November and 14:15 - 16:15 GMT on Friday 5th November.
 
@@ -40,13 +39,13 @@ Secondly, please make a note of the times of the two mandatory sessions: 10:00 -
 10:00-10:30 GMT | Welcome and Introduction | Professor Sonal Choudhury
 10:30-11:00 GMT | Q&A: Technical/Practical Advice | Dr Joe Fennell
 **Friday 5th November**
-14:00 GMT | Deadline for slide submission | send to helpdesk@joefennell.org
+14:00 GMT | Deadline for slide submission | send to stfcfoodnetwork@sheffield.ac.uk
 14:15-15:30 GMT | Team pitch |
 15:30-16:00 GMT | Judging (offline) |
 16:00 - 16:15 GMT| Award
 
 ## 4. Your pitch
-Your team needs to produce a 10 minute pitch that showcases your idea. The format is up to you, but remember this is a pitch for funding, so you need to present a coherent argument for why your app should be funded.
+Your team will produce a 10 minute pitch that showcases your idea and present this in the session on Friday. The format is up to you, but remember this is a pitch for funding, so you need to present a coherent argument for why and how your app will support the objectives of the project.
 
 It could include :
 - [**User Stories**](https://www.atlassian.com/agile/project-management/user-stories) Descriptions of why and how your users will interact with the platform
@@ -55,7 +54,7 @@ It could include :
 - **Visualisations** This could be example interfaces shown as mock-ups, wireframes or prototype demonstrations
 - **Management** How your team will use the investment to produce the platform. How will you keep it running?
 
-You must submit your slides by 14:00 GMT on Friday 5th of November (email slides or a link to helpdesk@joefennell.org). Slides
+You must submit your slides by 14:00 GMT on Friday 5th of November (email slides or a link to stfcfoodnetwork@sheffield.ac.uk). Slides
 submitted later than this will not be accepted, but you will still be able to
 pitch (without slides).
 
@@ -66,7 +65,7 @@ minutes by the slide deadline. This should be hosted on Youtube or Vimeo and can
 We have included data gathered by project partners as well as relevant 3rd party geospatial data providers.
 
 ### 5.1. Farm survey data
-This is a 4 year farm survey with the yield and crop type along with incomplete spatial information. The dataset is included in this repository: [data/2016_to_2020_ICS_data_v3_-_MP.xlsx](data/2016_to_2020_ICS_data_v3_-_MP.xlsx)
+This is a 4 year farm survey with the yield and crop type along with incomplete spatial information. The dataset is included in this repository at `data/sample_data_gov_in.csv`
 
 | Field | Description | dtype |
 | --- | --- | --- |
@@ -81,12 +80,13 @@ Crops | Crop type | str
 Area (HA) | Area of that crop type | float
 Estimated yield | Weight of crop in metric tonnes | float
 
+You can find a quick introduction and example analysis in the notebook [1_Farm_survey_data.ipynb](1_Farm_survey_data.ipynb).
+
 ### 5.2. Market data from Indian Government
 The [data.gov.in](https://data.gov.in) website has over 300,000 datasets. Part of this hackathon is about exploring the breadth and quality of these data. The most relevant section is probably the [agricultural markets section](https://data.gov.in/sector/agricultural-marketing).
 
 An example dataset is the Daily Market Prices of Garlic across India. The holding
-page is here:
-[https://data.gov.in/resources/variety-wise-daily-market-prices-garlic-2021/api](https://data.gov.in/resources/variety-wise-daily-market-prices-garlic-2021/api) displaying the resource ID.
+page is here: [https://data.gov.in/resources/variety-wise-daily-market-prices-garlic-2021/api](https://data.gov.in/resources/variety-wise-daily-market-prices-garlic-2021/api) displaying the resource ID.
 
 You can then make an API request over https to download a CSV. e.g.
 
@@ -95,25 +95,35 @@ https://api.data.gov.in/resource/af4ed290-ed4f-40e1-a8b8-a4440e57a9ed?api-key=57
 > Note that the `api-key` has been set to a test key that limits the number of
 records to 10. You can replace this with the key in your user space (see section 2.2).
 
+The response from this request is located in `data/sample_data_gov_in.csv`
+
 There is a pip-installable package called `datagovindia` that offers a Python interface
 to the data service: [visit project pages](https://pypi.org/project/datagovindia/).
-We have not tested this. Another option would be using the [Requests](https://pypi.org/project/requests/) library in Python to help you parse requests to the web service.
+We have not tested this.
+
+Another option would be using the [Requests](https://pypi.org/project/requests/) library in Python to help you parse requests to the web service. You can find a short demonstration of retrieving data from the data.gov.in in the notebook [2_data_gov_india.ipynb](2_data_gov_india.ipynb)
 
 ### 5.3. Soil Data
 Your project may require soils data. One source is [Soil Grids](https://data.isric.org/geonetwork/srv/eng/catalog.search#/home) who provide a [Web Mapping Service](https://maps.isric.org/) for various soil parameters. This is gridded at different spatial resolutions, but typically 250m.
 
-You can access this in many different ways. One option would be the [OWSLib](https://geopython.github.io/OWSLib/introduction.html) Python interface.
+You can access this in many different ways. One option would be the [OWSLib](https://geopython.github.io/OWSLib/introduction.html) Python interface. You can find a short demonstration of making a WMS request to the Soil Grids server in the notebook [3_SoilMap_WMS.ipynb](3_SoilMap_WMS.ipynb).
 
 ### 5.4. Google Earth Engine
 Earth Engine is a tool giving access to many freely-available Remote Sensing datasets and allowing on-the-fly processing for various analyses. It can be accessed via the Code Editor GUI
 <img src="handbook/img/ee.png" alt="alt text"/>
 **Google Earth Engine Code Editor**
 
-Alternatively it can be accessed via the Python API. An introduction to this can be found here [here](https://developers.google.com/earth-engine/guides/python_install-colab)
+Alternatively it can be accessed via the Python API. An introduction Jupyter Notebook to this can be found [here](https://developers.google.com/earth-engine/guides/python_install-colab) that demonstrates how to authenticate and access Google Earth Engine resources.
 
-### 5.5. Fertiliser and Pesticides Data
+### 5.5. Fertiliser, Pesticides and Disease Data
+A set of 7 CSV files have been previously generated by project partners for combining different agronomic datasets. These are located in `data/agronomic/`.
 
-### 5.6 Other Information Sources
+A PDF document has also been supplied containing yield-fertiliser relationships for a number of different crops. This is located at `data/agronomic/eKrishi-Ferilizer Recommendation - yield equations.pdf`
+
+### 5.6 Indian Districts
+District polygons retrieved originally from [here](https://www.kaggle.com/imdevskp/india-district-wise-shape-files). The ESRI shapefile is located in `data/geospatial/india_districts.shp`
+
+### 5.7 Other Information Sources
 
 | Link | Type |
 |:--- | :--- |
