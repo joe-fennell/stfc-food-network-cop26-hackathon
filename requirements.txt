@@ -1,5 +1,6 @@
 folium
 geopandas
+jupyterlab
 matplotlib
 numpy
 OWSLib
