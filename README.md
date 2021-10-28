@@ -64,10 +64,11 @@ minutes by the slide deadline. This should be hosted on Youtube or Vimeo and can
 ## 5. Recommended Datasets
 We have included data gathered by project partners as well as relevant 3rd party geospatial data providers.
 
-> The following assumes you have a working Anaconda 3 installation. If you do not have this, you can download and install [Anaconda here](https://www.anaconda.com/products/individual).
+### 5.1 Accessing the Tutorial Notebooks
 
-If you would like to run the Python Jupyter Notebook tutorials, you will need to clone the repository and install the dependencies.
+The following assumes you have a working Python Anaconda 3 installation and some experience of Jupyter Lab/Jupyter Notebook. If you do not have this, you can download and install [Anaconda here](https://www.anaconda.com/products/individual) and find learning resources on their webpages.
 
+If you would like to run the tutorials, you will need to clone the repository and install the dependencies into a conda environment:
 
 ```bash
 git clone git@github.com:joe-fennell/stfc-food-network-cop26-hackathon.git
@@ -76,6 +77,15 @@ conda env create -f
 conda activate cop26
 ```
 
+You can now launch a Jupyter Labs server session:
+
+```bash
+jupyter lab
+```
+
+This will start the server and open a web browser pointing to the correct url (normally `http://localhost:8888/lab`).
+
+You will then be able to access the three notebooks (.ipynb file extension) included with this handbook.
 
 ### 5.1. Farm survey data
 This is a 4 year farm survey with the yield and crop type along with incomplete spatial information. The dataset is included in this repository at `data/sample_data_gov_in.csv`
