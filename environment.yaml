@@ -8,6 +8,7 @@ dependencies:
   - jupyterlab
   - matplotlib
   - numpy
+  - openpyxl
   - OWSLib
   - pandas
   - python >= 3.8
