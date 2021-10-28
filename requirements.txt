@@ -1,0 +1,9 @@
+folium
+geopandas
+matplotlib
+numpy
+OWSLib
+pandas
+requests
+seaborn
+shapely
