@@ -7,5 +7,7 @@ openpyxl
 OWSLib
 pandas
 requests
+rioxarray
 seaborn
 shapely
+xarray

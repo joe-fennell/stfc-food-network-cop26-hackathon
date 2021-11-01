@@ -9,7 +9,7 @@
 </table>
 
 ## Event Handbook
-This handbook contains all the necessary information for participants of the event. If you have any queries about the materials provided or find a problem, please email [stfcfoodnetwork@sheffield.ac.uk](mailto:stfcfoodnetwork@sheffield.ac.uk)
+This handbook contains all the necessary information for participants of the event. If you have any queries about the materials provided or find a problem, please email [helpdesk@joefennell.org](helpdesk@joefennell.org)
 
 ## 1. The Challenge
 Through our partnerships with UKRI STFC, STFC Hartree Centre, IBM Research, and the [Centre for Sustainable Agriculture](https://csa-india.org/) we have identified a need to provide smallholder farmers with timely and location-specific advice about the crop types and varieties they should grow. Our challenge for the hackathon is to bring together hugely varied datasets - from market price data to soil maps - to design an integrated **open access** platform for recommending crop type, planting date and management advice for smallholder farmers in India.
@@ -39,7 +39,7 @@ Secondly, please make a note of the times of the two mandatory sessions: 10:00 -
 10:00-10:30 GMT | Welcome and Introduction | Professor Sonal Choudhury
 10:30-11:00 GMT | Q&A: Technical/Practical Advice | Dr Joe Fennell
 **Friday 5th November**
-14:00 GMT | Deadline for slide submission | send to stfcfoodnetwork@sheffield.ac.uk
+14:00 GMT | Deadline for slide submission | send to [helpdesk@joefennell.org](helpdesk@joefennell.org)
 14:15-15:30 GMT | Team pitch |
 15:30-16:00 GMT | Judging (offline) |
 16:00 - 16:15 GMT| Award
@@ -54,12 +54,12 @@ It could include :
 - **Visualisations** This could be example interfaces shown as mock-ups, wireframes or prototype demonstrations
 - **Management** How your team will use the investment to produce the platform. How will you keep it running?
 
-You must submit your slides by 14:00 GMT on Friday 5th of November (email slides or a link to stfcfoodnetwork@sheffield.ac.uk). Slides
+You must submit your slides by 14:00 GMT on Friday 5th of November (email slides or a link to [helpdesk@joefennell.org](helpdesk@joefennell.org)). Slides
 submitted later than this will not be accepted, but you will still be able to
 pitch (without slides).
 
 Alternatively, you are welcome to submit a video presentation of no more than 10
-minutes by the slide deadline. This should be hosted on Youtube or Vimeo and cannot be edited after the deadline. Please email the link as above.
+minutes by the slide deadline. This should be hosted on Youtube or Vimeo and cannot be edited after the deadline. Note that these services take time to process a video, so you should aim to upload an hour before the deadline. Please email the link as above.
 
 ## 5. Recommended Datasets
 We have included data gathered by project partners as well as relevant 3rd party geospatial data providers.
