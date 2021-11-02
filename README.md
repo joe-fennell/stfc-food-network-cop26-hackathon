@@ -75,7 +75,7 @@ If you would like to run the tutorials, you will need to clone the repository an
 ```bash
 git clone git@github.com:joe-fennell/stfc-food-network-cop26-hackathon.git
 cd stfc-food-network-cop26-hackathon
-conda env create -f
+conda env create --file=environment.yaml
 conda activate cop26
 ```
 
