@@ -14,6 +14,8 @@ This handbook contains all the necessary information for participants of the eve
 ## 1. The Challenge
 Through our partnerships with UKRI STFC, STFC Hartree Centre, IBM Research, and the [Centre for Sustainable Agriculture](https://csa-india.org/) we have identified a need to provide smallholder farmers with timely and location-specific advice about the crop types and varieties they should grow. Our challenge for the hackathon is to bring together hugely varied datasets - from market price data to soil maps - to design an integrated **open access** platform for recommending crop type, planting date and management advice for smallholder farmers in India.
 
+More information about the e-Krishi project can be found in the pdf: [SFN Hackathon-CSA-eKrishi-TRANSSITioN-SC.pdf](SFN Hackathon-CSA-eKrishi-TRANSSITioN-SC.pdf)
+
 ## 2. Pre-event activities
 ### 2.1. Register with Open Government Data Platform India
 
